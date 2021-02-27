@@ -28,7 +28,7 @@ class Employee:
         return self._emails
 
 
-def make_employee_dict(_names, _ids, _salary, _emails):  # to make the list into employee object
+def make_employee_dict(_names, _ids, _salary, _emails):
     result = {}
     for i in range(len(_names)):
         emp = Employee(_names[i], _ids[i], _salary[i], _emails[i])
