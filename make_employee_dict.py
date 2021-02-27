@@ -4,16 +4,16 @@
 
 class Employee:
     """Employee Class"""
-    def __init__(self, _names, _ids, _salary, _emails):
+    def __init__(self, _name, _ids, _salary, _emails):
         """ init method creating private names, ids, salaries, and emails"""
-        self._names = _names
+        self._name = _name
         self._ids = _ids
         self._salary = _salary
         self._emails = _emails
 
     def get_name(self):
         """returns name"""
-        return self._names
+        return self._name
 
     def get_ID_number(self):
         """returns ID number"""
@@ -28,9 +28,9 @@ class Employee:
         return self._emails
 
 
-def make_employee_dict(_names, _ids, _salary, _emails):
+def make_employee_dict(_name, _ids, _salary, _emails):
     result = {}
-    for i in range(len(_names)):
-        emp = Employee(_names[i], _ids[i], _salary[i], _emails[i])
+    for i in range(len(_name)):
+        emp = Employee(_name[i], _ids[i], _salary[i], _emails[i])
         result[_ids[i]] = emp
     return result
